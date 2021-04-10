@@ -1,1 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+.header{
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 0em;
+    /* height : 20vh; */
+
+    color: white;
+    font-family :'jokerman';
+    font-size : 2em;
+    background-color: black;
+
+    z-index: 1;
+
+}
+
+.screenShow{
+    z-index: 2;
+    color : white;
+    font-size : 4em;
+    height : 100vh;
+    width : 100%;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.parentRepeatAbout{
+    font-size : 4em;
+    color : white;
+    font-family: 'Caveat', cursive;
+
+    height : 50vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.aboutHeader{
+    color:#3cff00;
+}
+
+
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10%;
+    margin-left : 5%;
+    grid-row-gap: 50px;
+    width : 90%;
+    grid-auto-rows: minmax(200px, auto);
+    border: 0px;
+
+}
+
+
+.containerImage{
+    width : 100%;
+    vertical-align: middle;
+    /* height : 100%; */
+}
+
+
+.myDescription{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    width : 100%;
+    /* font-size : 0.9em; */
+}
+
+
+ul{
+    color : white;
+    font-size: 2em;
+}
+
+
+ol{
+    font-size: 0.8em;
+    margin-left : 5%;
+}
+
+
+.sectionHeaders{
+    color: rgb(115, 255, 0);
+    /* color: white; */
+    font-size: 2em;
+    font-family :Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+.aboutMe{
+    display: grid;
+    grid-template-columns: 25% 55%;
+    grid-column-gap: 10%;
+    margin-left : 10%;
+    padding-left : 5%;
+    padding-right : 5%;
+
+    background-color: rgb(67, 67, 141);
+    color:rgb(255, 255, 255);
+    font-size: 1.75em;
+    width : 70%;
+}
+
+
+a{
+    color:rgb(139, 255, 255);
+}
+
+
+.btn {
+    border: none;
+    background-color: inherit;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.75em;
+    cursor: pointer;
+    display: inline-block;
+    padding : 1% 1%;
+}
+
+.languagesPhoto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width : 30%;
+}
+
+
+.repoImages{
+    width : auto;
+}
+
+
+
+
+@media only screen and (max-width: 1250px){
+    .myDescription{
+        font-size : 0.9em;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .myDescription{
+        font-size : 0.7em;
+    }
+
+    .parentRepeatAbout{
+        font-size : 3em;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-left : 2.5%;
+        width : 95%;
+    }
+
+    .aboutMe{
+        font-size : 1.25em;
+        
+        width : 95%;
+        display: grid;
+        margin-left : 2.5%;
+        margin-right: 2.5%;
+        grid-template-columns: 95%;
+        padding-left : 2.5%;
+        padding-right : 2.5%;
+
+    }
+
+    .myDescription{
+        font-size : 1.1em;
+    }
+}
+
+
+@media only screen and (max-width: 550px){
+    .repoImages {
+        width : 100%;
+    } 
+}
+
+
+@media only screen and (max-width: 450px){
+    .header {
+        font-size : 1.25em;
+    }
+
+    .parentRepeatAbout{
+        font-size : 2em;
+    }
+}
+
+
+
+  /* On mouse-over */
+.btn:hover {background: rgb(79, 6, 107);}
+
+.github {color: rgb(0, 132, 255);}
+.blog {color: rgb(2, 163, 75);}
+.algoExpert {color: rgb(255, 94, 0);}
 
