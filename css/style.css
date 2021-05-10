@@ -88,6 +88,7 @@ ol {
     grid-template-columns: 25% 55%;
     grid-column-gap: 10%;
     margin-left: 10%;
+    margin-bottom: 50px;
     padding-left: 5%;
     padding-right: 5%;
     background-color: rgb(67, 67, 141);
