@@ -20,6 +20,7 @@
     z-index: 2;
     color: white;
     font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     height: 100vh;
     width: 100%;
     display: grid;
