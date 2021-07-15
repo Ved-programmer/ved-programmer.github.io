@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 .header {
     left: 0;
     position: fixed;
@@ -102,11 +103,17 @@ a {
 }
 
 .btn {
+    --margins : 5%;
+    --originalFontSize : 1.75em;
+
     border: none;
     background-color: inherit;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 1.75em;
+    margin-left: var(--margins);
+    margin-right: var(--margins);
+    /* margin-left: 5%;
+    margin-right: 5%; */
+
+    font-size: var(--originalFontSize);
     cursor: pointer;
     display: inline-block;
     padding: 1% 1%;
@@ -123,10 +130,36 @@ a {
     width: auto;
 }
 
+/* On mouse-over */
+
+.btn:hover {
+    background: rgb(79, 6, 107);
+}
+
+.github {
+    color: rgb(0, 132, 255);
+}
+
+.blog {
+    color: rgb(2, 163, 75);
+}
+
+.algoExpert {
+    color: rgb(255, 94, 0);
+}
+
+
 @media only screen and (max-width: 1250px) {
     .myDescription {
         font-size: 0.9em;
     }
+
+    .btn {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+
 }
 
 @media only screen and (max-width: 1100px) {
@@ -136,7 +169,14 @@ a {
     .parentRepeatAbout {
         font-size: 3em;
     }
+
+    .btn {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
+
+
 
 @media only screen and (max-width: 950px) {
     .gridContainer {
@@ -158,12 +198,27 @@ a {
     .myDescription {
         font-size: 1.1em;
     }
+
+}
+
+@media only screen and (max-width: 850px) {
+    .btn{
+        font-size : 1.25em;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .btn{
+        font-size : var(--originalFontSize);
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 550px) {
     .repoImages {
         width: 100%;
     }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -174,26 +229,6 @@ a {
         font-size: 2em;
     }
 }
-
-
-/* On mouse-over */
-
-.btn:hover {
-    background: rgb(79, 6, 107);
-}
-
-.github {
-    color: rgb(0, 132, 255);
-}
-
-.blog {
-    color: rgb(2, 163, 75);
-}
-
-.algoExpert {
-    color: rgb(255, 94, 0);
-}
-
 
 /* Scroll Bar */
 
