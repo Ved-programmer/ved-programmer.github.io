@@ -126,21 +126,6 @@ a {
     width: 30%;
 }
 
-#web-games-wrapper { 
-    color : white;
-    text-align: center;
-    width : 100%;
-}
-
-.web-games{
-    column-gap: 10%;;
-}
-
-.web-games > *{
-    width : 100%;
-    height : 70vh;
-}
-
 .repoImages {
     width: auto;
 } 
