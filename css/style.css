@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); 
 
 .header {
     left: 0;
@@ -55,6 +55,7 @@
 .containerImage {
     width: 100%;
     vertical-align: middle;
+    margin-bottom: 50px;
     /* height : 100%; */
 }
 
@@ -102,6 +103,7 @@ a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .btn {
     --margins : 5%;
     --originalFontSize : 1.75em;
@@ -110,6 +112,7 @@ a {
     background-color: inherit;
     margin-left: var(--margins);
     margin-right: var(--margins);
+    margin-top : 3%;
     /* margin-left: 5%;
     margin-right: 5%; */
 
@@ -148,6 +151,59 @@ a {
     color: rgb(255, 94, 0);
 }
 
+
+
+/* Collapsibles */
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    margin-top:10px;
+  }
+  
+.active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+.active:after {
+    content: "\2212";
+  }
+  
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background-color: #f1f1f1;
+  }
+
+#p5-games{
+    color : black;
+    font-size : 1em;
+}
+
+#p5-games a{
+    color: black;
+    text-decoration: underline;
+    line-height : 1.6em;
+}
+
+
+/* Media Queries */
 
 @media only screen and (max-width: 1250px) {
     .myDescription {
