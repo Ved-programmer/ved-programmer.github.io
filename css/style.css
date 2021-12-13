@@ -155,6 +155,11 @@ a {
 
 /* Collapsibles */
 
+.collapsibleContainer {
+    width : 70%;
+    margin : auto;
+}
+
 .collapsible {
     background-color: #777;
     color: white;
@@ -182,7 +187,7 @@ a {
 .active:after {
     content: "\2212";
   }
-  
+
 .content {
     padding: 0 18px;
     max-height: 0;
@@ -193,7 +198,7 @@ a {
 
 #p5-games{
     color : black;
-    font-size : 1em;
+    font-size : 2.5em;
 }
 
 #p5-games a{
