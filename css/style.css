@@ -84,6 +84,15 @@ ol {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
+#programmingCertificate {
+    display: block; 
+    width: 80%; 
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+
 .aboutMe {
     display: grid;
     grid-template-columns: 25% 55%;
@@ -265,6 +274,10 @@ a {
 @media only screen and (max-width: 850px) {
     .btn{
         font-size : 1.25em;
+    }
+
+    #programmingCertificate {
+        width: 100%; 
     }
 }
 
