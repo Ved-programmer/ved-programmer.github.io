@@ -84,13 +84,18 @@ ol {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-#programmingCertificate {
-    display: block; 
-    width: 80%; 
+.programmingCertificates {
+    display: flex;
+    justify-content: space-around;
+    /* width: 90%; */
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;   
+}
+
+.programmingCertificate{
+    display: inline-block;
+    width : 45%;
 }
 
 .aboutMe {
@@ -213,7 +218,7 @@ a {
 #p5-games a{
     color: black;
     text-decoration: underline;
-    line-height : 1.6em;
+    line-height : 1.4em;
 }
 
 
@@ -269,6 +274,10 @@ a {
         font-size: 1.1em;
     }
 
+    #p5-games{
+        font-size : 1.5em;
+    }
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -276,8 +285,16 @@ a {
         font-size : 1.25em;
     }
 
-    #programmingCertificate {
+    .programmingCertificate {
         width: 100%; 
+    }
+
+    .programmingCertificates {
+        display : block;
+    }
+    
+    #p5-games a{
+        line-height : 1em;
     }
 }
 
