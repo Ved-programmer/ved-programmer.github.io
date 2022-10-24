@@ -14,8 +14,6 @@ function typeWriterBeginning(i, txt, id, speed) {
 }
 
 function fillIn(txt, id){
-  console.log(id);
-  console.log(document.getElementById(id));
   let spaces = Array(txt.length).fill('\xa0').join('');
   // console.log(txt.length * " ");
   // console.log(spaces);
@@ -28,10 +26,8 @@ function typeWriter(){
   
   let id1 = "upperSubtitle"; let id2 = "lowerSubtitle";
   let speed = 50;
-  console.log(upperText.length);
   let timeToExectueFirstTypeWriting = upperText.length * speed;
 
-  console.log(document.getElementById("lowerSubtitle"));
 
   fillIn(upperText, id1);
   fillIn(lowerText, id2);
